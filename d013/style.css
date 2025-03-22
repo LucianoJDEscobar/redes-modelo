@@ -25,9 +25,9 @@ main{
 
 section#telefone{
     position: absolute;
-    top: 50%;
+    top: 70px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,0%);
     height: 626px;
     width: 310px;
     background: url('imagens/frame-iphone.png') no-repeat;
@@ -43,7 +43,7 @@ iframe#tela{
 }
 
 section#redes-sociais{
-    text-align: right;
+    text-align: center;
 }
 
 section#redes-sociais img{
