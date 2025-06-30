@@ -1,24 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="d013/style.css">
-    <link rel="shortcut icon" href="d013/imagens/favicon.ico" type="image/x-icon">
-    <title>Redes sociais</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site em Manutenção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logo_icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        img.logo {
+            max-width: 180px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #092e94;
+            /* Azul */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .countdown div {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown div span {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            color: #FF6600;
+            /* Laranja */
+        }
+
+        .countdown div label {
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        .contact-button {
+            background-color: #25D366;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1em;
+            display: inline-block;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #1da851;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .socials img {
+            width: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+            box-sizing: border-box;
+        }
+
+        .socials img:hover {
+            border: 2px solid rgba(255, 255, 255, 0.568);
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: transform .2s, border .1s;
+        }
+
+        footer {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
+
 <body>
-    <main>
-        <section id="telefone">
-            <iframe src="d013/home.html" frameborder="0" name="tela" id="tela">Seu navegador não é compatível com este IFRAME</iframe>
-        </section>
-        <section id="redes-sociais">
-            <a href="d013/home.html" target="tela"><img src="d013/imagens/logo-home.jpg" alt="Home"></a>
-            <a href="#" target="tela"><img src="d013/imagens/logo-youtube.jpg" alt="Youtube"></a>
-            <a href="d013/github.html" target="tela"><img src="d013/imagens/logo-github.jpg" alt="GitHub"></a>
-            <a href="d013/instagram.html" target="tela"><img src="d013/imagens/logo-instagram.jpg" alt="Instagram"></a>
-            <a href="d013/facebook.html" target="tela"><img src="d013/imagens/logo-facebook.jpg" alt="Facebook"></a>
-        </section>
-    </main>
+
+    <!-- LOGO -->
+    <img src="imagens/LogoRedondoAzulBranco.png" alt="Logo da empresa" class="logo">
+
+    <!-- TÍTULO -->
+    <h1>Estamos em manutenção</h1>
+    <p>Estamos construindo um site para melhor atendê-lo. Iniciaremos em breve!</p>
+
+    <!-- CONTAGEM REGRESSIVA -->
+    <div class="countdown">
+        <div><span id="dias">00</span><label>Dias</label></div>
+        <div><span id="horas">00</span><label>Horas</label></div>
+        <div><span id="minutos">00</span><label>Minutos</label></div>
+        <div><span id="segundos">00</span><label>Segundos</label></div>
+    </div>
+
+    <!-- BOTÃO DE CONTATO -->
+    <a href="https://wa.me/5551994507082&text=Ol%C3%A1%2C+gostaria+de+fazer+um+or%C3%A7amento.%21&type=phone_number&app_absent=0"
+        target="_blank" class="contact-button">
+        Fale conosco no WhatsApp
+    </a>
+
+    <!-- REDES SOCIAIS -->
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/lucianojdescobar/" target="_blank">
+            <img src="imagens/logo-linkedin_300x300.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/ljsolucoes.poa/" target="_blank">
+            <img src="imagens/logo-instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/channel/UChJigCmfVJH9Eh-bdggkZrg" target="_blank">
+            <img src="imagens/logo-youtube.jpg" alt="Youtube">
+        </a>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>&copy; Produzido por Luciano Juliano - 2025 | Todos os direitos reservados</footer>
+
+    <!-- SCRIPT CONTAGEM REGRESSIVA -->
+    <script>
+        const targetDate = new Date("2025-09-30T00:00:00").getTime();
+
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("dias").innerText = dias.toString().padStart(2, '0');
+            document.getElementById("horas").innerText = horas.toString().padStart(2, '0');
+            document.getElementById("minutos").innerText = minutos.toString().padStart(2, '0');
+            document.getElementById("segundos").innerText = segundos.toString().padStart(2, '0');
+
+            if (diff <= 0) {
+                clearInterval(countdown);
+                document.querySelector(".countdown").innerHTML = "<p>Estamos de volta!</p>";
+            }
+        }, 1000);
+    </script>
 </body>
+
 </html>
